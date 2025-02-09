@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaSpark - Instagram Bio Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='icons/favicon.ico') }}" type="image/x-icon">
+</head>
+<body class="bg-gradient-to-r from-green-200 to-blue-400 min-h-screen flex flex-col">
+    <header class="bg-gradient-to-r from-green-400 to-blue-500 shadow-lg fixed w-full top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center h-16">
+            <div class="flex items-center space-x-3">
+                <i class="fab fa-instagram text-white text-2xl"></i>
+                <div class="text-2xl font-bold text-white">InstaSpark</div>
+            </div>
+
+            <nav class="flex items-center space-x-4">
+                <a href="#" class="text-white hover:text-green-100 transition duration-300">
+                    <i class="fas fa-question-circle"></i> Help
+                </a>
+                <a href="https://www.instagram.com/rozhak_official" target="_blank" class="text-white hover:text-green-100 transition duration-300">
+                    <i class="fab fa-instagram"></i> Follow Us
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-6 py-24 mt-16">
+        <section class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-gray-800 mb-4">Generate Your Perfect Instagram Bio</h1>
+            <p class="text-xl text-gray-700">InstaSpark helps you create unique and creative bios for your Instagram profile in seconds!</p>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow p-8 w-full max-w-2xl mx-auto">
+            <div class="mb-8">
+                <label for="description" class="block text-gray-700 font-semibold mb-2">
+                    <i class="fas fa-user-edit mr-2"></i>Describe yourself:
+                </label>
+                <textarea id="description" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="e.g., I'm a graphic designer who loves traveling and photography..."></textarea>
+            </div>
+            <button id="generateBtn" class="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-600 transition duration-300 flex items-center justify-center">
+                <i class="fas fa-magic mr-2"></i> Generate Bio
+            </button>
+
+            <div id="outputSection" class="mt-8 hidden">
+                <label for="bioOutput" class="block text-gray-700 font-semibold mb-2">
+                    <i class="fas fa-clipboard mr-2"></i>Your Bio:
+                </label>
+                <div class="relative">
+                    <textarea id="bioOutput" rows="3" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-50" readonly></textarea>
+                    <button id="copyBtn" class="absolute right-2 top-2 bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600 transition duration-300">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-16 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">What is InstaSpark?</h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                InstaSpark is an AI-powered Instagram bio generator designed to help you create unique, creative, and professional bios for your Instagram profile. Whether you're an artist, entrepreneur, traveler, or just someone looking to spice up your profile, InstaSpark has got you covered!
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-gradient-to-r from-green-400 to-blue-500 shadow-lg h-16 flex items-center justify-center">
+        <div class="text-center">
+            <p class="text-white">Made with ❤️ by <a href="#" class="text-green-100 hover:underline">Rozhak</a></p>
+            <div class="mt-1 space-x-4">
+                <a href="https://x.com/rozhak_official" class="text-white hover:text-green-100 transition duration-300"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/rozhak_official" class="text-white hover:text-green-100 transition duration-300"><i class="fab fa-instagram"></i></a>
+                <a href="https:/github.com/RozhakXD/InstaSpark" class="text-white hover:text-green-100 transition duration-300"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
