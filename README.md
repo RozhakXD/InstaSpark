@@ -11,12 +11,12 @@
 **InstaSpark** adalah generator bio Instagram bertenaga AI yang membantu Anda membuat bio kreatif, profesional, dan menarik dalam hitungan detik! ✨
 
 ## 🌟 Fitur Utama
+- **📋 Copy-Paste Mudah**: Tombol salin otomatis untuk bio yang dihasilkan.
 - **🤖 AI-Powered**: Menggunakan Blackbox AI untuk menghasilkan bio yang unik dan relevan.
 - **🎨 Modern UI**: Antarmuka pengguna yang responsif dan elegan dengan Tailwind CSS.
 - **🚀 Cepat & Ringan**: Dioptimalkan untuk performa tinggi.
-- **📋 Copy-Paste Mudah**: Tombol salin otomatis untuk bio yang dihasilkan.
-- **🔒 Validasi Input**: Penanganan error dengan notifikasi yang user-friendly.
 - **🌍 Responsif**: Tampilan sempurna di semua perangkat (desktop, tablet, mobile).
+- **🔒 Validasi Input**: Penanganan error dengan notifikasi yang user-friendly.
 
 ## 🛠️ Teknologi yang Digunakan
 - **Backend**: Flask (Python)
@@ -47,7 +47,7 @@
 
 ## 🎮 Cara Menggunakan
 - **Buka Aplikasi**: Akses `http://localhost:5000` di browser.
-- **Deskripsikan Diri Anda**: `Saya seorang pendaki gunung yang gemar menjelajahi alam, menaklukkan puncak, dan menikmati keindahan panorama dari ketinggian. Bagi saya, mendaki bukan hanya tentang mencapai puncak, tetapi juga tentang perjalanan, ketahanan, dan kebebasan yang dirasakan di setiap langkah.`
+- **Deskripsikan Diri Anda**: "Saya petani kangkung yang berpengalaman, menghasilkan kangkung segar dan berkualitas."
 - **Klik "Generate Bio"**: Tunggu AI bekerja! ⚡
 - **Salin Bio**: Gunakan tombol salin untuk menyalin bio ke clipboard. 📋
 
